@@ -1,0 +1,97 @@
+/* Backgrounds */
+.home-bg { background: url("images/bg-home.jpg") no-repeat center/cover; }
+.resume-bg { background: url("images/bg-resume.jpg") no-repeat center/cover; }
+.biodata-bg { background: url("images/bg-biodata.jpg") no-repeat center/cover; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0; padding: 0;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  padding: 15px 20px;
+  color: white;
+  position: sticky; top: 0; z-index: 1000;
+}
+
+.navbar a {
+  color: white; margin: 0 15px;
+  text-decoration: none; transition: color 0.3s;
+}
+.navbar a:hover { color: #ffdd57; }
+.logo { font-size: 1.5rem; font-weight: bold; font-color: white; }
+
+/* Profile */
+.profile-img {
+  width: 150px; height: 150px;
+  border-radius: 50%; border: 4px solid white;
+  margin-bottom: 15px;
+  
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hero */
+.hero {
+  text-align: center; padding: 100px 20px;
+  color: white;
+}
+.hero h2 { font-size: 2.5rem; }
+.hero p { font-size: 1.2rem; margin: 15px 0; }
+.highlight { color: #ffdd57; }
+
+.btn {
+  display: inline-block;
+  margin: 10px; padding: 12px 25px;
+  background: white; color: #0077cc;
+  border-radius: 25px; text-decoration: none;
+  font-weight: bold; transition: 0.3s;
+}
+.btn:hover { transform: scale(1.1); background: #ffdd57; color: black; }
+
+/* Content */
+.content {
+  width: 85%; margin: 20px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Tables & Lists */
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+th { background: #0077cc; color: white; }
+
+.skills span {
+  display: inline-block;
+  margin: 8px; padding: 10px 15px;
+  background: #e0f7fa; border-radius: 5px;
+  transition: transform 0.3s;
+}
+.skills span:hover { transform: scale(1.1); background: #ffdd57; }
+
+.info-list li { margin: 8px 0; }
+
+/* Animations */
+.fade-in { animation: fadeIn 1.5s ease-in; }
+.slide-up { animation: slideUp 1.5s ease-in-out; }
+
+@keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+@keyframes slideUp { from {transform: translateY(50px); opacity: 0;} to {transform: translateY(0); opacity: 1;} }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h2 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .btn { padding: 10px 20px; }
+}

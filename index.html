@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    .navbar {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px;
+    }
+    .team-members {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; /* so it adjusts in small screens */
+      margin-top: 30px;
+    }
+    .member-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 220px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .member-card:hover {
+      transform: translateY(-5px);
+    }
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      background: #007bff;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body class="home-bg">
+
+<header class="navbar">
+  <h1 class="logo">Our Team</h1>
+  <nav>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Meet Our Team</h2>
+  <p>4 Passionate Computer Science Students</p>
+
+  <div class="team-members">
+    <div class="member-card">
+      <img src="images/member1.jpg" alt="Member 1" class="profile-img">
+      <h3>Member 1</h3>
+      <a href="resume1.html" class="btn"> Resume</a>
+      <a href="biodata1.html" class="btn"> Bio-data</a>
+    </div>
+    <div class="member-card">
+      <img src="images/member2.jpg" alt="Member 2" class="profile-img">
+      <h3>Member 2</h3>
+      <a href="resume2.html" class="btn"> Resume</a>
+      <a href="biodata2.html" class="btn"> Bio-data</a>
+    </div>
+    <div class="member-card">
+      <img src="images/member3.jpg" alt="Member 3" class="profile-img">
+      <h3>Member 3</h3>
+      <a href="resume3.html" class="btn"> Resume</a>
+      <a href="biodata3.html" class="btn"> Bio-data</a>
+    </div>
+    <div class="member-card">
+      <img src="images/member4.jpg" alt="Member 4" class="profile-img">
+      <h3>Member 4</h3>
+      <a href="resume4.html" class="btn"> Resume</a>
+      <a href="biodata4.html" class="btn"> Bio-data</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
