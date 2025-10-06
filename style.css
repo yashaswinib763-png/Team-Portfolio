@@ -1,7 +1,6 @@
 /* Backgrounds */
 .home-bg { background: url("bg-home.jpg") no-repeat center/cover; }
 .resume-bg { background: url("bg-resume.jpg") no-repeat center/cover; }
-.biodata-bg { background: url("bg-biodata.jpg") no-repeat center/cover; }
 
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -95,4 +94,5 @@ th { background: #0077cc; color: white; }
   .hero p { font-size: 1rem; }
   .btn { padding: 10px 20px; }
 }
+
 
